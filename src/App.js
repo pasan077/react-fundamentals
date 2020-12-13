@@ -1,16 +1,10 @@
 import React from 'react';
+import NameList from './components/NameList/NameList';
 
 function App() {
   return (
     <div>
-      <h1>Name List</h1>
-      <hr/>
-      <ul>
-        <li>Pasan Jayathilaka - Sycoshouts.com</li>
-        <li>Uthpala Heenatigala - TakeitEasy </li>
-        <li>Lahiru Perera - Rocell </li>
-        <li>Prashan Palansooriya - ONE TYRE MART </li>
-      </ul>
+      <NameList />
     </div>
   )
 }
