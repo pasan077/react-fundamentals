@@ -1,12 +1,9 @@
 import React from 'react';
 
-function NameListItem () {
+function NameListItem (props) {
     return (
         <div>
-            <li>Pasan Jayathilaka - Sycoshouts.com</li>
-            <li>Uthpala Heenatigala - DoingITeasy </li>
-            <li>Lahiru Perera - Rocell Tiles Engineering </li>
-            <li>Prashan Palansooriya - ONE TYRE MART </li>
+            <li>{props.name} - course - {props.course}</li>
         </div>
     )
 }
