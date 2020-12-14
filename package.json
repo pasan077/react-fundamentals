@@ -6,11 +6,14 @@
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",
     "@testing-library/user-event": "^12.5.0",
+    "i": "^0.3.6",
     "moment": "^2.29.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.1",
-    "web-vitals": "^0.2.4"
+    "tsutils": "^3.17.1",
+    "web-vitals": "^0.2.4",
+    "wesbos": "^1.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -37,6 +40,20 @@
     ]
   },
   "devDependencies": {
-    "prettier": "2.2.1"
+    "@fullhuman/postcss-purgecss": "^1.3.0",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-graphql-tag": "^2.5.0",
+    "eslint": "^7.15.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-config-wesbos": "0.0.19",
+    "eslint-plugin-html": "^5.0.3",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.3.0",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^1.3.0",
+    "postcss-preset-env": "^6.7.0",
+    "prettier": "^1.16.4"
   }
 }
