@@ -28,15 +28,34 @@ function NameList() {
       "medium": "https://randomuser.me/api/portraits/med/men/75.jpg",
     },
   },
-    {
-      "name": { "title": "Mrs", "first": "Undine", "last": "Ulrich" },
-      "location": {
-        "street": { "number": 5417, "name": "Berliner Straße" },
-        "city": "Mindelheim", "state": "Nordrhein-Westfalen", "country": "Germany", "postcode": 50259,
-        "coordinates": { "latitude": "-46.6044", "longitude": "37.9602" }
+  {
+    "name": {
+      "title": "mr",
+      "first": "Jacqueline",
+      "last": "Simmons"
+    },
 
-      }
-    }
+    "location": {
+      "street": { "number": 9217, "name": "Rolling Green Rd" },
+      "city": "Warragul",
+      "state": "Tasmania",
+      "country": "Australia",
+      "postcode": 4012,
+      "coordinates": { "latitude": "-88.8355", "longitude": "177.8865" },
+      "timezone": { "offset": "0:00", "description": "Western Europe Time, London, Lisbon, Casablanca" }
+    },
+    
+    "email":"jacqueline.simmons@example.com",
+
+    "dob": {
+      "date": "1967-05-03T06:30:22.191Z", "age": 53
+    },
+    "picture": {
+      "large": "https://randomuser.me/api/portraits/women/14.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/women/14.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/women/14.jpg"
+    },
+  },    
 ];
 
   return (
@@ -51,6 +70,13 @@ function NameList() {
           email={nameList[0].email}
           birthday={nameList[0].dob.date}
           avatar={nameList[0].picture.medium} />
+      <NameListItem
+          name={nameList[1].name.first + ' ' + nameList[1].name.last}
+          name={`${nameList[1].name.first} ${nameList[1].name.last}`}
+          city={nameList[1].location.city}
+          email={nameList[1].email}
+          birthday={nameList[1].dob.date}
+          avatar={nameList[1].picture.medium} />
       </ul>
     </div>
   )
