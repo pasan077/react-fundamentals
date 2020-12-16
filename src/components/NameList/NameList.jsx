@@ -27,13 +27,15 @@ function NameList() {
     "picture": {
       "medium": "https://randomuser.me/api/portraits/med/men/75.jpg",
     },
-  }, {
-    "name": { "title": "Mrs", "first": "Undine", "last": "Ulrich" },
-    "location": {
-      "street": { "number": 5417, "name": "Berliner Straße" },
-      "city": "Mindelheim", "state": "Nordrhein-Westfalen", "country": "Germany", "postcode": 50259,
-      "coordinates": { "latitude": "-46.6044", "longitude": "37.9602" }
+  },
+    {
+      "name": { "title": "Mrs", "first": "Undine", "last": "Ulrich" },
+      "location": {
+        "street": { "number": 5417, "name": "Berliner Straße" },
+        "city": "Mindelheim", "state": "Nordrhein-Westfalen", "country": "Germany", "postcode": 50259,
+        "coordinates": { "latitude": "-46.6044", "longitude": "37.9602" }
 
+      }
     }
 ];
 
@@ -41,7 +43,6 @@ function NameList() {
     <div>
       <h1>Name List</h1>
       <hr />
-                <p>erer</p>
       <ul>
         <NameListItem
           name={nameList[0].name.first + ' ' + nameList[0].name.last}
